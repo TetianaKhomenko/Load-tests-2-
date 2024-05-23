@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "@testomatio/reporter": "^0.4.6",
     "chai": "^4.3.4",
     "check-tests": "^0.7.1",
     "dotenv": "^8.6.0",
@@ -29,6 +28,7 @@
   "devDependencies": {
     "@codeceptjs/configure": "^0.4.0",
     "@codeceptjs/ui": "^0.4.6",
+    "@testomatio/reporter": "^1.4.1",
     "codeceptjs": "^3.0.5",
     "puppeteer": "^2.0.0"
   }

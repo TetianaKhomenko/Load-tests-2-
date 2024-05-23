@@ -1,7 +1,7 @@
 Feature('codepress demo2')
 
 Before(async ({ I }) => {
-  I.amOnPage('http://todomvc.com/examples/angularjs/#/')
+  I.amOnPage('https://todomvc.com/examples/angular/dist/browser/#/all')
 
   I.say('Given I already have some todos')
   const todoItems = [
