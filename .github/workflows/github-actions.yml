@@ -39,7 +39,7 @@ jobs:
         TESTOMATIO_URL: "${{ github.event.inputs.testomatio_url }}"
         TESTOMATIO_RUN: "${{ github.event.inputs.run }}"
         BROWSER: "${{ github.event.inputs.browser }}"
-        env: "${{ github.event.inputs.env }}"
+        TESTOMATIO_ENV: "${{ github.event.inputs.env }}"
         TEST_USER: "${{ github.event.inputs.user }}"
         TEST_PASSWORD: "${{ github.event.inputs.password }}"
         
