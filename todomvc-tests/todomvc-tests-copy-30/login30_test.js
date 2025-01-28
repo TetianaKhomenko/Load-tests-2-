@@ -1,9 +1,9 @@
-Feature ('Login Page 130');
+Feature ('Login Page 130 @Sca0e3bfc');
 
 const email = 'lamin.jaymar@acelap.com';
 const password = 'qwerty'
 
-Scenario ('Login page 130', async ({ I }) => {
+Scenario ('Login page 130 @T1a85658b', async ({ I }) => {
   I.say('I will go to login page now');
   I.amOnPage('https://beta.testomat.io');
   I.say('I fulfilled field a password and email');

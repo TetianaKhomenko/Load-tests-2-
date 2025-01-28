@@ -1,4 +1,4 @@
-Feature('Mark as completed/not completed 33 @step-06')
+Feature('Mark as completed/not completed 33 @step-06 @Sbb965cda')
 
 Before(async ({ I, TodosPage }) => {
     TodosPage.goto()
@@ -11,7 +11,7 @@ Before(async ({ I, TodosPage }) => {
 /**
  * Happy Path tests
  */
-Scenario('Mark todos as completed 33', async ({ I, TodosPage }) => {
+Scenario('Mark todos as completed 33 @T439c44b8', async ({ I, TodosPage }) => {
   I.say('Given I have some todos')
 
   I.say('When I mark the first one as completed')
@@ -28,7 +28,7 @@ Scenario('Mark todos as completed 33', async ({ I, TodosPage }) => {
   I.saveScreenshot('mark-todos-as-completed.png')
 })
 
-Scenario('Unmark completed todos 33', async ({ I, TodosPage }) => {
+Scenario('Unmark completed todos 33 @Tb3ea7a47', async ({ I, TodosPage }) => {
     I.say('Given I have some todos')
   
     I.say('And I mark the first one as completed')
@@ -44,7 +44,7 @@ Scenario('Unmark completed todos 33', async ({ I, TodosPage }) => {
     I.saveScreenshot('unmark-todos-as-completed.png')
 })
   
-Scenario('Mark all todos as completed 33', async ({ I, TodosPage }) => {
+Scenario('Mark all todos as completed 33 @T8d713b53', async ({ I, TodosPage }) => {
     I.say('Given I have some todos')
   
     I.say('When I mark them all as completed')
@@ -57,7 +57,7 @@ Scenario('Mark all todos as completed 33', async ({ I, TodosPage }) => {
     I.saveScreenshot('mark-all-todos-as-completed.png')
 })
 
-Scenario('Clear completed todos 33', async ({ I, TodosPage }) => {
+Scenario('Clear completed todos 33 @T34dc666d', async ({ I, TodosPage }) => {
     I.say('Given I have some completed todos') 
     TodosPage.markAllAsCompleted()
   

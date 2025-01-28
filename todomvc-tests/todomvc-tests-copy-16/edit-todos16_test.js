@@ -1,4 +1,4 @@
-Feature('Edit/Delete Todos 116 @step-06')
+Feature('Edit/Delete Todos 116 @step-06 @S5f1be8d5')
 
 Before(async ({ I, TodosPage }) => {
     TodosPage.goto()
@@ -8,7 +8,7 @@ Before(async ({ I, TodosPage }) => {
     TodosPage.enterTodo('baz')
 })
 
-Scenario('Edited todo is saved on blur 116', async ({ I, TodosPage }) => {
+Scenario('Edited todo is saved on blur 116 @Te0ea77e9', async ({ I, TodosPage }) => {
     I.say('Given I have some todos')
   
     I.say('When I edit the first todo')
@@ -20,7 +20,7 @@ Scenario('Edited todo is saved on blur 116', async ({ I, TodosPage }) => {
     I.saveScreenshot('edited-todo-saved-on-blur.png')
 })
 
-Scenario('Delete todos 116', async ({ I, TodosPage }) => {
+Scenario('Delete todos 116 @Ta696274e', async ({ I, TodosPage }) => {
     I.say('Given I have some todos')
     I.say('When I delete the first todo')
     TodosPage.deleteNthTodo(1)
