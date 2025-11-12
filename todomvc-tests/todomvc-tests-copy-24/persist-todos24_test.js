@@ -1,4 +1,4 @@
-Feature('Persist Todos 124 @S99ab592f')
+Feature('Persist Todos 124')
 
 Before(async ({ I, TodosPage }) => {
   I.say('Given I have some todos')
@@ -15,7 +15,7 @@ Before(async ({ I, TodosPage }) => {
   I.saveScreenshot('initial-todos.png')
 })
 
-Scenario('Todos survive a page refresh 124 @step-06 @Tdd187937', async ({ I, TodosPage }) => {
+Scenario('Todos survive a page refresh 124 @step-06', async ({ I, TodosPage }) => {
   I.say('And I marked the first as completed')
   await TodosPage.markNthAsCompleted(1)
 

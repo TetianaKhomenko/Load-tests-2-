@@ -1,4 +1,4 @@
-Feature('codepress demo2 @S507a780c')
+Feature('codepress demo2')
 
 Before(async ({ I }) => {
   I.amOnPage('https://todomvc.com/examples/angular/dist/browser/#/all')
@@ -29,7 +29,7 @@ Before(async ({ I }) => {
   I.waitForVisible('.new-todo')
 })
 
-Scenario('Create some todo items2 @smoke @T27039b7a', async ({ I }) => {
+Scenario('Create some todo items2 @smoke', async ({ I }) => {
   I.say('When I focus the todo field')
   I.click('.new-todo')
 

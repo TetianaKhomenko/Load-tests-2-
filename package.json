@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "chai": "^4.3.4",
-    "check-tests": "^0.7.1",
+    "check-tests": "^0.10.0",
     "dotenv": "^8.6.0",
     "playwright": "^1.16.3",
     "playwright-chromium": "^1.14.1"
@@ -28,8 +28,8 @@
   "devDependencies": {
     "@codeceptjs/configure": "^0.4.0",
     "@codeceptjs/ui": "^0.4.6",
-    "@testomatio/reporter": "^2.0.1-beta-esm",
-    "codeceptjs": "^3.0.5",
+    "@testomatio/reporter": "^2.0.1-beta.7",
+    "codeceptjs": "^3.7.5",
     "puppeteer": "^2.0.0"
   }
 }
