@@ -17,6 +17,9 @@ on:
         required: false
       testomatio_env:
         required: false
+      suites:
+        description: 'Test suites to run'
+        required: false
 
 jobs:
   build:
