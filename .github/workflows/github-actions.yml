@@ -43,6 +43,6 @@ jobs:
         BROWSER: "${{ github.event.inputs.browser }}"
         TESTOMATIO_ENV: "${{ github.event.inputs.testomatio_env }}"
         TEST_USER: "${{ github.event.inputs.user }}"
-        SUITES: "${{ github.event.inputs.suite_id }}"
+        SUITES: "${{ github.event.inputs.suites }}"
         TEST_PASSWORD: "${{ github.event.inputs.password }}"
         
