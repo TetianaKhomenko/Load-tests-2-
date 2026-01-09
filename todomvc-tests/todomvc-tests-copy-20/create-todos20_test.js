@@ -1,4 +1,4 @@
-Feature('@first Create Todos 120 @step:06 @smoke @story:12345')
+Feature('@first Create Todos 120 @step:06 @smoke @story:12345 @Sc948183f')
 
 Before(async ({ I, TodosPage }) => {
   TodosPage.goto()
@@ -7,7 +7,7 @@ Before(async ({ I, TodosPage }) => {
 /**
  * Happy Path tests
  */
-Scenario('Create a new todo item 120', async ({ I, TodosPage }) => {
+Scenario('Create a new todo item 120 @Ta61c14ac', async ({ I, TodosPage }) => {
   I.say('Given I have an empty todo list')
 
   I.say('When I create a todo "foo"')
@@ -19,7 +19,7 @@ Scenario('Create a new todo item 120', async ({ I, TodosPage }) => {
   I.saveScreenshot('create-todo-item.png')
 });
 
-Scenario('Create multiple todo items 120', async ({ I, TodosPage }) => {
+Scenario('Create multiple todo items 120 @Tbd3f1465', async ({ I, TodosPage }) => {
   I.say('Given I have an empty todo list')
   I.say('When I create todos "foo", "bar" and "baz"')
   TodosPage.enterTodo('foo')
@@ -42,7 +42,7 @@ examples.add(['Very looooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 examples.add(['Todo with html code <script>alert("hello")</script>', 'is in list'])
 
 Data(examples).
-Scenario('Todos containing weird characters 120', async ({ I, current, TodosPage }) => {
+Scenario('Todos containing weird characters 120 @Tf5cd9dbc', async ({ I, current, TodosPage }) => {
   I.say('When I enter {Todo Text}')
   TodosPage.enterTodo(current['Todo Text'])
 
@@ -52,7 +52,7 @@ Scenario('Todos containing weird characters 120', async ({ I, current, TodosPage
   }
 })
 
-Scenario('Text input field should be cleared after each item 120', async ({ I, TodosPage }) => {
+Scenario('Text input field should be cleared after each item 120 @Tc9d89e4a', async ({ I, TodosPage }) => {
   I.say('Given I have an empty todo list')
   I.say('When I enter a new todo')
   TodosPage.enterTodo('foo')
@@ -61,7 +61,7 @@ Scenario('Text input field should be cleared after each item 120', async ({ I, T
   TodosPage.seeEmptyTodoInput()
 })
 
-Scenario('Text input should be trimmed 120', async ({ I, TodosPage }) => {
+Scenario('Text input should be trimmed 120 @Tf5a75af5', async ({ I, TodosPage }) => {
   I.say('Given I have an empty todo list')
   I.say('When I enter a todo with whitespace around the text')
   TodosPage.enterTodo('       Todo with lots of whitespace around       ')
@@ -71,7 +71,7 @@ Scenario('Text input should be trimmed 120', async ({ I, TodosPage }) => {
 })
 
 
-Scenario('New todos should be added to the bottom of the list 120', async ({ I, TodosPage }) => {
+Scenario('New todos should be added to the bottom of the list 120 @T9ce48477', async ({ I, TodosPage }) => {
   I.say('Given I added some todos')
   TodosPage.enterTodo('first')
   TodosPage.enterTodo('second')
@@ -85,7 +85,7 @@ Scenario('New todos should be added to the bottom of the list 120', async ({ I, 
 })
 
 
-Scenario('Footer should be visible when adding TODOs 120', async ({ I, TodosPage }) => {
+Scenario('Footer should be visible when adding TODOs 120 @T8e2fedaa', async ({ I, TodosPage }) => {
   I.say('Given I am adding todos')
   TodosPage.seeFooter()
   I.say('When I add a todo')
