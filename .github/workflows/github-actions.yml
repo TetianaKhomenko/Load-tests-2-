@@ -38,6 +38,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps    
     - run: npx codeceptjs run --grep "${{ github.event.inputs.grep }}"
+    - run: npx codeceptjs run --grep "${{ github.event.inputs.suites }}"
       env:
         DEBUG: "@testomatio/reporter:*" 
         TESTOMATIO: "${{ github.event.inputs.testomatio }}"
