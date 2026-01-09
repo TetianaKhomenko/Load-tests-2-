@@ -1,4 +1,4 @@
-name: github-actions
+name: workflow_grep
 
 on:
   workflow_dispatch:
