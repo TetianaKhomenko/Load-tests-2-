@@ -17,6 +17,8 @@ on:
         required: false
       testomatio_env:
         required: false
+      suites:
+        required: false
 
 jobs:
   build:
