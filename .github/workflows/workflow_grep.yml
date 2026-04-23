@@ -43,6 +43,7 @@ jobs:
         TESTOMATIO: "${{ github.event.inputs.testomatio }}"
         TESTOMATIO_URL: "${{ github.event.inputs.testomatio_url }}"
         TESTOMATIO_RUN: "${{ github.event.inputs.run }}"
+        TESTOMATIO_DISABLE_BATCH_UPLOAD: "true"
         BROWSER: "${{ github.event.inputs.browser }}"
         TESTOMATIO_ENV: "${{ github.event.inputs.testomatio_env }}"
         TEST_USER: "${{ github.event.inputs.user }}"
